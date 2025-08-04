@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial , sans-serif;
+  margin: 20px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('bck_ttt1.jpg') no-repeat center center/cover;
+  filter: blur(0.4rem);
+  z-index: -1;
+}
+
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.square {
+  background: radial-gradient(circle at center, hsl(33, 100%, 50%) 35%, black);
+  border: 0.2rem solid hsla(267, 91%, 13%, 0.884);
+  float: left;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 34px;
+  height: 5rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.square:hover{
+  background: radial-gradient(circle at center, hsl(33, 100%, 50%) 50%, black);
+  transform: scale(1.1);
+}
+.square:active{
+  background: radial-gradient(circle at center, hsl(33, 100%, 50%) 55%, black);
+  transform: scale(0.9);
+}
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  font-family: Arial , sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border: 0.2rem solid black;
+  background: linear-gradient(180deg , hsl(18, 94%, 45%) 70%, hsl(41, 92%, 47%));
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  cursor: not-allowed;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+}
+
+.options{
+  background: linear-gradient(180deg , red , yellow);
+  width: 1.3rem;
+  height: 1.5rem;
+  margin: 1.2rem 1.2rem;
+  padding: 1.1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.traverse-history{
+  background: linear-gradient(180deg ,hsl(41, 92%, 47%) 20% , hsl(18, 94%, 45%));
+  padding: 0.5rem;
+  border-radius: 0.8rem; 
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.header{
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+
+.footer{
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+hr{
+  width: 20rem;
+}
+
+.playerType{
+  display: flex;
+  flex-direction: row;
+}
+
+.playerCheckbox{
+  height: 1rem;
+  width: 1rem;
+}
+
+.mode-label{
+  color : white;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+.icons{
+  display: flex;
+  gap: 0.8rem;
+}
+
+.icons a{
+  color: white;
+  font-size: 1.2rem;
+}
+.icons a:hover{
+  color: hsl(0, 1%, 68%);
+  transform : scale(1.1);
+}
